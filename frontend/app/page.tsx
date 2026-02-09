@@ -54,7 +54,7 @@ const styles = {
   label: {
     fontSize: "14px",
     fontWeight: "600",
-    color: "#374151"
+    color: "#080808"
   },
   input: {
     padding: "14px 16px",
@@ -63,7 +63,8 @@ const styles = {
     fontSize: "15px",
     outline: "none",
     transition: "all 0.2s",
-    fontWeight: "500"
+    fontWeight: "500",
+    color:"#080808"
   },
   button: {
     padding: "16px",
