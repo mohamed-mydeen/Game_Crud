@@ -54,8 +54,9 @@ const styles = {
   label: {
     fontSize: "14px",
     fontWeight: "600",
-    color: "#080808"
+    color: "black"
   },
+  
   input: {
     padding: "14px 16px",
     borderRadius: "12px",
@@ -64,7 +65,7 @@ const styles = {
     outline: "none",
     transition: "all 0.2s",
     fontWeight: "500",
-    color:"black"
+    color: "black", 
   },
   button: {
     padding: "16px",
