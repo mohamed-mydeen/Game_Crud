@@ -77,7 +77,7 @@ const styles = {
     minWidth: "100px",
     position: "relative" as const
   },
-  // NEW: Custom file upload button
+  
   imageUploadWrapper: {
     display: "flex",
     gap: "12px",
@@ -181,7 +181,7 @@ const styles = {
     fontWeight: "600",
     transition: "all 0.2s"
   },
-  // NEW: Loading overlay
+  
   loadingOverlay: {
     position: "fixed" as const,
     top: 0,
@@ -215,7 +215,7 @@ const styles = {
     color: "#333",
     fontWeight: "600"
   },
-  // NEW: Confirmation modal
+  
   modalOverlay: {
     position: "fixed" as const,
     top: 0,
@@ -274,7 +274,7 @@ const styles = {
     fontWeight: "600",
     fontSize: "14px"
   },
-  // NEW: Empty state with loading
+  
   emptyState: {
     textAlign: "center" as const,
     padding: "60px 20px",
@@ -450,7 +450,7 @@ export default function Dashboard() {
     setShowConfirmModal(true);
   };
 
-  // NEW: Actual logout function
+  
   const handleLogout = () => {
     setShowConfirmModal(false);
     localStorage.clear();
@@ -486,7 +486,7 @@ export default function Dashboard() {
             onMouseEnter={(e) => e.currentTarget.style.transform = "scale(1.05)"}
             onMouseLeave={(e) => e.currentTarget.style.transform = "scale(1)"}
           >
-            🚪 Logout
+             Logout
           </button>
         </div>
 
@@ -523,7 +523,7 @@ export default function Dashboard() {
               onMouseEnter={(e) => e.currentTarget.style.backgroundColor = "#5568d3"}
               onMouseLeave={(e) => e.currentTarget.style.backgroundColor = "#667eea"}
             >
-              📷 Choose Image
+               Choose Image
             </button>
             
             {selectedImage && (
@@ -542,7 +542,7 @@ export default function Dashboard() {
 
         {games.length === 0 ? (
           <div style={styles.emptyState}>
-            <div style={styles.emptyIcon}>🎯</div>
+            <div style={styles.emptyIcon}></div>
             <p style={styles.emptyText}>
               {isLoading ? "Loading..." : "No games yet. Add your first game above!"}
             </p>
@@ -564,7 +564,7 @@ export default function Dashboard() {
                     onMouseEnter={(e) => e.currentTarget.style.backgroundColor = "#2563eb"}
                     onMouseLeave={(e) => e.currentTarget.style.backgroundColor = "#3b82f6"}
                   >
-                    ✏️ Edit
+                     Edit
                   </button>
                   <button 
                     style={styles.deleteButton} 
@@ -572,7 +572,7 @@ export default function Dashboard() {
                     onMouseEnter={(e) => e.currentTarget.style.backgroundColor = "#dc2626"}
                     onMouseLeave={(e) => e.currentTarget.style.backgroundColor = "#ef4444"}
                   >
-                    🗑️ Delete
+                     Delete
                   </button>
                 </div>
               </div>
@@ -596,7 +596,7 @@ export default function Dashboard() {
         <div style={styles.modalOverlay}>
           <div style={styles.modalBox}>
             <h2 style={styles.modalTitle}>
-              {confirmAction?.type === 'delete' ? '🗑️ Delete Game?' : '🚪 Logout?'}
+              {confirmAction?.type === 'delete' ? ' Delete Game?' : ' Logout?'}
             </h2>
             <p style={styles.modalMessage}>
               {confirmAction?.type === 'delete' 
@@ -627,3 +627,4 @@ export default function Dashboard() {
     </div>
   );
 }
+
