@@ -64,7 +64,7 @@ const styles = {
     outline: "none",
     transition: "all 0.2s",
     fontWeight: "500",
-    color:"#080808"
+    color:"black"
   },
   button: {
     padding: "16px",
